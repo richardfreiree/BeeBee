@@ -1,6 +1,8 @@
 package br.com.etecia.myapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -24,6 +26,14 @@ public class SplashActivity extends AppCompatActivity {
             return insets;
         });
         // Apresentar ao java o objeto xml.
-        btnEntrar=
+        btnEntrar=findViewById(R.id.BtnEntrar);
+
+        // criar a ação de clique no botão.
+        btnEntrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+            }
+        });
     }
 }
