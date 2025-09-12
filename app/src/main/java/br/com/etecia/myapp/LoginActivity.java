@@ -26,13 +26,13 @@ public class LoginActivity extends AppCompatActivity {
             return insets;
         });
 
-        bntVoltar=findViewById(R.id.BtnVoltar);
-
-        bntVoltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), SplashActivity.class));
-            }
-        });
+//        bntVoltar=findViewById(R.id.BtnVoltar);
+//
+//        bntVoltar.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(getApplicationContext(), SplashActivity.class));
+//            }
+//        });
     }
 }

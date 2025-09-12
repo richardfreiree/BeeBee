@@ -26,16 +26,7 @@ public class SplashActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        // Apresentar ao java o objeto xml.
-        btnEntrar=findViewById(R.id.BtnEntrar);
 
-        // criar a ação de clique no botão.
-        btnEntrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-            }
-        });
 
         // processo em background
         new Handler().postDelayed(new Runnable() {

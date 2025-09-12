@@ -8,11 +8,35 @@
     android:orientation="vertical"
     tools:context=".SplashActivity"
     android:gravity="center_horizontal|center_vertical"
+    android:background="#490000"
     >
 
-    <Button
-        android:id="@+id/BtnEntrar"
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/carroamarelo"
+        android:id="@+id/logoSplash"
+        />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Entrar"/>
+        android:text="BeeBee"
+        android:textSize="40dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        android:fontFamily="@font/font"
+        android:id="@+id/textSplash"
+        />
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:indicatorColor="#490000"
+        android:id="@+id/pgSplash"
+        />
+
+
+
 </LinearLayout>
