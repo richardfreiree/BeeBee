@@ -5,35 +5,40 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:layout_margin="20dp"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".SplashActivity">
 
     <ImageView
+        android:id="@+id/logoLogin"
         android:layout_width="200dp"
-
         android:layout_height="200dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/carroamarelo"
-        android:id="@+id/logoLogin"
-        />
+        android:src="@drawable/carroamarelo" />
+
     <TextView
+        android:id="@+id/fontLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/font"
+        android:gravity="center_horizontal"
         android:text="BeeBee"
         android:textSize="40dp"
-        android:gravity="center_horizontal"
-        android:fontFamily="@font/font"
+        android:layout_marginBottom=20dp"
         />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:hint="Insira seu Email: "
-        app:startIconDrawable="@drawable/baseline_email"
         app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baseline_email"
+        android:id="@+id/emailLogin"
+        android:layout_marginBottom="10dp"
         >
+
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -41,4 +46,34 @@
             />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Insira sua senha: "
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/baseline_lock"
+        android:id="@+id/passwordlLogin"
+        android:layout_marginBottom="20dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Entrar"
+        android:id="@+id/entrarLogin" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:id="@+id/cadastrarLogin" />
 </LinearLayout>
+
