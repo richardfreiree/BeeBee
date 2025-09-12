@@ -18,12 +18,21 @@
         android:src="@drawable/carroamarelo"
         android:id="@+id/logoLogin"
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BeeBee"
+        android:textSize="40dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/font"
+        />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Insira seu Email: "
-
+        app:startIconDrawable="@drawable/baseline_email"
+        app:endIconMode="clear_text"
         >
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
