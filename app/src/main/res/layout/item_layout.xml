@@ -6,21 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MenuActivity">
+    tools:context=".ItemActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
 
         android:layout_height="wrap_content">
-<com.google.android.material.appbar.MaterialToolbar
-    android:layout_width="match_parent"
-    app:menu="@menu/menu_drawer"
-    android:layout_height="?actionBarSize"
-    app:title="Produtos"
-    app:navigationIcon="@drawable/baseline_arrow_back"
-
-    />
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            app:menu="@menu/menu_item"
+            android:layout_height="?actionBarSize"
+            />
 
     </com.google.android.material.appbar.AppBarLayout>
-
 </LinearLayout>
